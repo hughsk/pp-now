@@ -1,0 +1,33 @@
+{
+  "name": "pp-now",
+  "description": "Quick setup for single-pass GLSL post-processing with gl-now",
+  "version": "0.0.0",
+  "main": "index.js",
+  "browser": "index.js",
+  "dependencies": {
+    "debounce": "0.0.3",
+    "gl-vao": "0.0.3",
+    "gl-buffer": "~0.1.1",
+    "gl-shader": "0.0.6",
+    "gl-fbo": "~0.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {},
+  "author": "Hugh Kennedy <hughskennedy@gmail.com> (http://github.com/hughsk)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hughsk/pp-now"
+  },
+  "bugs": {
+    "url": "https://github.com/hughsk/pp-now/issues"
+  },
+  "keywords": [
+    "webgl",
+    "post",
+    "processing",
+    "pixels",
+    "glsl",
+    "shader"
+  ]
+}
