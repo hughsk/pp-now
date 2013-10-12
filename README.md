@@ -25,8 +25,8 @@ post-processing framebuffer.
 ### `shell.on('pp-uniforms', frame(shader))` ###
 
 Passes the [gl-shader](http://github.com/mikolalysenko/gl-shader) being
-used for post-processing to `shell.postProcessing` so that you can update your
-own additional uniforms manually.
+used for post-processing so that you can update your own additional uniforms
+manually.
 
 ***
 
