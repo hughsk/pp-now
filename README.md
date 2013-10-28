@@ -14,6 +14,8 @@ by `gl-now`, in addition to a `fragment` shader which takes the following
 required variables:
 
 * `uniform sampler2D frame;` - the screen as a 2D texture.
+* `uniform sampler2D depth;` - the screen's depth buffer as a 2D texture.
+* `uniform vec2 frameSize;` - the width/height of the screen in pixels.
 * `varying vec2 uv;` - the coordinates on the screen from 0 to 1.
   Alternatively, you can use `gl_FragCoord.xy` for precise pixel coordinates.
 

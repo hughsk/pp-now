@@ -7,7 +7,7 @@ var createVAO    = require('gl-vao')
 module.exports = postprocessing
 
 function postprocessing(shell, frag, vert) {
-  var shape = [0,0]
+  var shape = new Float32Array([0, 0])
   var vertices
   var shader
   var frame
@@ -68,7 +68,9 @@ function postprocessing(shell, frag, vert) {
     gl.viewport(0, 0, width, height)
 
     shader.bind()
-    shader.uniforms.frame = frame.color.bind()
+    shader.uniforms.frame = frame.color.bind(0)
+    shader.uniforms.depth = frame.depth.bind(1)
+    shader.uniforms.frameSize = shape
     shader.attributes.location = 0
     shell.emit('pp-uniforms', shader)
 
