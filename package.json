@@ -1,7 +1,7 @@
 {
   "name": "pp-now",
   "description": "Quick setup for single-pass GLSL post-processing with gl-now",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "main": "index.js",
   "browser": "index.js",
   "dependencies": {
